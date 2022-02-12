@@ -1,0 +1,14 @@
+{
+    "name": "Nagarik Aawash - Real Estate",
+    "namespace": "Theme\\Nagarikaawash\\",
+    "description": "Real Estate Company",
+    "author": "Sushant Poudel",
+    "version": "2.2.0",
+    "required_plugins": [
+        "blog",
+        "contact",
+        "language",
+        "location",
+        "real-estate"
+    ]
+}
