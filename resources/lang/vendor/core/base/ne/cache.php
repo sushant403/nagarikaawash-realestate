@@ -1,33 +1,33 @@
 <?php
 
 return [
-    'cache_management' => 'Cache management',
-    'cache_commands' => 'Clear cache commands',
-    'commands' => [
+    'cache_management' => 'क्यास व्यवस्थापन',
+    'cache_commands' => 'क्यास आदेशहरू खाली गर्नुहोस्',
+    'आदेशहरू' => [
         'clear_cms_cache' => [
-            'title' => 'Clear all CMS cache',
-            'description' => 'Clear CMS caching: database caching, static blocks... Run this command when you don\'t see the changes after updating data.',
-            'success_msg' => 'Cache cleaned',
+            'title' => 'सबै CMS क्यास खाली गर्नुहोस्',
+            'description' => 'CMS क्यासिङ खाली गर्नुहोस्: डाटाबेस क्यासिङ, स्ट्याटिक ब्लकहरू... डाटा अपडेट गरिसकेपछि तपाईंले परिवर्तनहरू देख्नुहुन्न भने यो आदेश चलाउनुहोस्।',
+            'success_msg' => 'क्यास सफा गरियो',
         ],
         'refresh_compiled_views' => [
-            'title' => 'Refresh compiled views',
-            'description' => 'Clear compiled views to make views up to date.',
-            'success_msg' => 'Cache view refreshed',
+            'title' => 'कम्पाइल गरिएका दृश्यहरू ताजा गर्नुहोस्',
+            'description' => 'दृश्यहरू अद्यावधिक गर्नको लागि कम्पाइल गरिएका दृश्यहरू खाली गर्नुहोस्।',
+            'success_msg' => 'क्यास दृश्य ताजा गरियो',
         ],
         'clear_config_cache' => [
-            'title' => 'Clear config cache',
-            'description' => 'You might need to refresh the config caching when you change something on production environment.',
-            'success_msg' => 'Config cache cleaned',
+            'title' => 'कन्फिग क्यास खाली गर्नुहोस्',
+            'description' => 'तपाईँले उत्पादन वातावरणमा केही परिवर्तन गर्दा कन्फिगरेसन क्यासिङ रिफ्रेस गर्नुपर्ने हुन सक्छ।',
+            'success_msg' => 'कन्फिग क्यास सफा गरियो',
         ],
         'clear_route_cache' => [
-            'title' => 'Clear route cache',
-            'description' => 'Clear cache routing.',
-            'success_msg' => 'The route cache has been cleaned',
+            'title' => 'रुट क्यास खाली गर्नुहोस्',
+            'description' => 'क्यास राउटिङ खाली गर्नुहोस्।',
+            'success_msg' => 'रुट क्यास सफा गरिएको छ',
         ],
         'clear_log' => [
-            'title' => 'Clear log',
-            'description' => 'Clear system log files',
-            'success_msg' => 'The system log has been cleaned',
+            'title' => 'लग खाली गर्नुहोस्',
+            'description' => 'प्रणाली लग फाइलहरू खाली गर्नुहोस्',
+            'success_msg' => 'प्रणाली लग सफा गरिएको छ',
         ],
     ],
 ];

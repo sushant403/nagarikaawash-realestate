@@ -1,24 +1,24 @@
 <?php
 
 return [
-    '401_title' => 'Permission Denied',
-    '401_msg' => '<li>You have not been granted access to the section by the administrator.</li>'."\n"
-        .'	                <li>You may have the wrong account type.</li>'."\n"
-        .'	                <li>You are not authorized to view the requested resource.</li>'."\n"
-        .'	                <li>Your subscription may have expired.</li>',
-    '404_title' => 'Page could not be found',
-    '404_msg' => '<li>The page you requested does not exist.</li>'."\n"
-        .'	                <li>The link you clicked is no longer.</li>'."\n"
-        .'	                <li>The page may have moved to a new location.</li>'."\n"
-        .'	                <li>An error may have occurred.</li>'."\n"
-        .'	                <li>You are not authorized to view the requested resource.</li>',
-    '500_title' => 'Page could not be loaded',
-    '500_msg' => '<li>The page you requested does not exist.</li>'."\n"
-        .'	                <li>The link you clicked is no longer.</li>'."\n"
-        .'	                <li>The page may have moved to a new location.</li>'."\n"
-        .'	                <li>An error may have occurred.</li>'."\n"
-        .'	                <li>You are not authorized to view the requested resource.</li>',
-    'reasons' => 'This may have occurred because of several reasons',
-    'try_again' => 'Please try again in a few minutes, or alternatively return to the homepage by <a href="http://nagarikaawash.local/admin">clicking here</a>.',
-    'not_found' => 'Not Found',
+    '401_title' => 'अनुमति अस्वीकृत',
+    '401_msg' => '<li>तपाईलाई प्रशासकद्वारा खण्डमा पहुँच प्रदान गरिएको छैन।</li>' . "\n"
+        . ' <li>तपाईंसँग गलत खाता प्रकार हुन सक्छ।</li>' . "\n"
+        . ' <li>तपाईंलाई अनुरोध गरिएको स्रोत हेर्ने अधिकार छैन।</li>' . "\n"
+        . ' <li>तपाईँको सदस्यताको म्याद सकिएको हुन सक्छ।</li>',
+    '404_title' => 'पृष्ठ फेला पार्न सकिएन',
+    '404_msg' => '<li>तपाईंले अनुरोध गर्नुभएको पृष्ठ अवस्थित छैन।</li>' . "\n"
+        . ' <li>तपाईले क्लिक गर्नुभएको लिङ्क अब छैन।</li>' . "\n"
+        . ' <li>पृष्ठ नयाँ स्थानमा सरेको हुन सक्छ।</li>' . "\n"
+        . ' <li>त्रुटि भएको हुन सक्छ।</li>' . "\n"
+        . ' <li>तपाईंलाई अनुरोध गरिएको स्रोत हेर्ने अधिकार छैन।</li>',
+    '500_title' => 'पृष्ठ लोड गर्न सकिएन',
+    '500_msg' => '<li>तपाईंले अनुरोध गर्नुभएको पृष्ठ अवस्थित छैन।</li>' . "\n"
+        . ' <li>तपाईले क्लिक गर्नुभएको लिङ्क अब छैन।</li>' . "\n"
+        . ' <li>पृष्ठ नयाँ स्थानमा सरेको हुन सक्छ।</li>' . "\n"
+        . ' <li>त्रुटि भएको हुन सक्छ।</li>' . "\n"
+        . ' <li>तपाईंलाई अनुरोध गरिएको स्रोत हेर्ने अधिकार छैन।</li>',
+    'कारण' => 'यो धेरै कारणले भएको हुन सक्छ',
+    'try_again' => 'कृपया केही मिनेटमा पुन: प्रयास गर्नुहोस्, वा वैकल्पिक रूपमा <a href="https://nagarikaawash.com/admin-portal">यहाँ क्लिक गरेर</a> होमपेजमा फर्कनुहोस्।',
+    'not_found' => 'फेला परेन',
 ];

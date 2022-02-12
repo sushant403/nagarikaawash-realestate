@@ -1,162 +1,132 @@
 <?php
 
+/*
+|--------------------------------------------------------------------------
+| Validation Language Lines
+|--------------------------------------------------------------------------
+|
+| The following language lines contain the default error messages used by
+| the validator class. Some of these rules have multiple versions such
+| as the size rules. Feel free to tweak each of these messages here.
+|
+*/
+
 return [
-
-    /*
-    |--------------------------------------------------------------------------
-    | Validation Language Lines
-    |--------------------------------------------------------------------------
-    |
-    | The following language lines contain the default error messages used by
-    | the validator class. Some of these rules have multiple versions such
-    | as the size rules. Feel free to tweak each of these messages here.
-    |
-    */
-
-    'accepted' => 'The :attribute must be accepted.',
-    'accepted_if' => 'The :attribute must be accepted when :other is :value.',
-    'active_url' => 'The :attribute is not a valid URL.',
-    'after' => 'The :attribute must be a date after :date.',
-    'after_or_equal' => 'The :attribute must be a date after or equal to :date.',
-    'alpha' => 'The :attribute must only contain letters.',
-    'alpha_dash' => 'The :attribute must only contain letters, numbers, dashes and underscores.',
-    'alpha_num' => 'The :attribute must only contain letters and numbers.',
-    'array' => 'The :attribute must be an array.',
-    'before' => 'The :attribute must be a date before :date.',
-    'before_or_equal' => 'The :attribute must be a date before or equal to :date.',
-    'between' => [
-        'numeric' => 'The :attribute must be between :min and :max.',
-        'file' => 'The :attribute must be between :min and :max kilobytes.',
-        'string' => 'The :attribute must be between :min and :max characters.',
-        'array' => 'The :attribute must have between :min and :max items.',
+    'accepted'             => ':attribute स्वीकार गरिएको हुनुपर्छ।',
+    'active_url'           => ':attribute URL अमान्य छ।',
+    'after'                => ':attribute को मिति :date भन्दा पछि हुनुपर्छ।',
+    'after_or_equal'       => ':attribute मिति पछाडि वा बराबर मिति हुनुपर्दछ।',
+    'alpha'                => ':attribute मा अक्षरहरु मात्र हुनसक्छ।',
+    'alpha_dash'           => ':attribute मा अक्षर, संख्या र ड्यासहरू मात्र हुनसक्छ।',
+    'alpha_num'            => ':attribute मा अक्षर र संख्याहरू मात्र हुनसक्छ।',
+    'array'                => ':attribute एर्रे हुनुपर्छ।',
+    'attached'             => 'यो :attribute छ नै संलग्न.',
+    'before'               => ':attribute को मिति :date भन्दा अघि हुनुपर्छ।',
+    'before_or_equal'      => ':attribute मिति भन्दा अघि वा बराबर :date हुनुपर्दछ। ',
+    'between'              => [
+        'array'   => ':attribute आइटमको संख्या :min र :max को बिचमा हुनुपर्छ।',
+        'file'    => ':attribute :min र :max किलोबाइट्स को बिचमा हुनुपर्छ।',
+        'numeric' => ':attribute :min र :maxको बिचमा हुनुपर्छ।',
+        'string'  => ':attribute :min र :max वर्णको बिचमा हुनुपर्छ।',
     ],
-    'boolean' => 'The :attribute field must be true or false.',
-    'confirmed' => 'The :attribute confirmation does not match.',
-    'current_password' => 'The password is incorrect.',
-    'date' => 'The :attribute is not a valid date.',
-    'date_equals' => 'The :attribute must be a date equal to :date.',
-    'date_format' => 'The :attribute does not match the format :format.',
-    'declined' => 'The :attribute must be declined.',
-    'declined_if' => 'The :attribute must be declined when :other is :value.',
-    'different' => 'The :attribute and :other must be different.',
-    'digits' => 'The :attribute must be :digits digits.',
-    'digits_between' => 'The :attribute must be between :min and :max digits.',
-    'dimensions' => 'The :attribute has invalid image dimensions.',
-    'distinct' => 'The :attribute field has a duplicate value.',
-    'email' => 'The :attribute must be a valid email address.',
-    'ends_with' => 'The :attribute must end with one of the following: :values.',
-    'enum' => 'The selected :attribute is invalid.',
-    'exists' => 'The selected :attribute is invalid.',
-    'file' => 'The :attribute must be a file.',
-    'filled' => 'The :attribute field must have a value.',
-    'gt' => [
-        'numeric' => 'The :attribute must be greater than :value.',
-        'file' => 'The :attribute must be greater than :value kilobytes.',
-        'string' => 'The :attribute must be greater than :value characters.',
-        'array' => 'The :attribute must have more than :value items.',
+    'boolean'              => ':attribute ठिक अथवा बेठिक हुनुपर्छ।',
+    'confirmed'            => ':attribute दाेहाेर्याइएकाे मिलेन।',
+    'current_password'     => 'The password is incorrect.',
+    'date'                 => ':attribute को मिति मिलेन।',
+    'date_equals'          => ':attribute मिति बराबर :date हुनुपर्दछ।',
+    'date_format'          => ':attribute को ढाँचा :format जस्तो हुनुपर्छ।',
+    'different'            => ':attribute र :other फरक हुनुपर्छ।',
+    'digits'               => ':attribute :digits अंकको हुनुपर्छ।',
+    'digits_between'       => ':attribute :min देखी :max अंकको हुनुपर्छ।',
+    'dimensions'           => ':attribute अमान्य छवि आयाम छ।',
+    'distinct'             => ':attribute फिल्ड फिल्डको नक्कल मान छ',
+    'email'                => ':attribute को इमेल ठेगाना मिलेन।',
+    'ends_with'            => ':attribute निम्न मध्ये एकको साथ विशेषता अन्त हुनुपर्दछ :values',
+    'exists'               => 'छानिएको :attribute अमान्य छ।',
+    'file'                 => ':attribute एक फाईल हुनुपर्दछ।',
+    'filled'               => ':attribute दिइएको हुनुपर्छ।',
+    'gt'                   => [
+        'array'   => ' :attribute :value आईटमहरू भन्दा बढि हुनुपर्दछ।',
+        'file'    => ' :attribute :value क्यालोबाइट भन्दा बढि हुनुपर्दछ।',
+        'numeric' => ' :attribute :value भन्दा बढि हुनुपर्दछ।',
+        'string'  => ' :attribute :value क्यारेक्टर भन्दा बढि हुनुपर्दछ।',
     ],
-    'gte' => [
-        'numeric' => 'The :attribute must be greater than or equal to :value.',
-        'file' => 'The :attribute must be greater than or equal to :value kilobytes.',
-        'string' => 'The :attribute must be greater than or equal to :value characters.',
-        'array' => 'The :attribute must have :value items or more.',
+    'gte'                  => [
+        'array'   => ' :attribute :value आईटमहरू भन्दा बढि हुनुपर्दछ।',
+        'file'    => ' :attribute :value क्यालोबाइट भन्दा बढि हुनुपर्दछ।',
+        'numeric' => ' :attribute :value भन्दा बढि हुनुपर्दछ।',
+        'string'  => ' :attribute :value क्यारेक्टर भन्दा बढि हुनुपर्दछ।',
     ],
-    'image' => 'The :attribute must be an image.',
-    'in' => 'The selected :attribute is invalid.',
-    'in_array' => 'The :attribute field does not exist in :other.',
-    'integer' => 'The :attribute must be an integer.',
-    'ip' => 'The :attribute must be a valid IP address.',
-    'ipv4' => 'The :attribute must be a valid IPv4 address.',
-    'ipv6' => 'The :attribute must be a valid IPv6 address.',
-    'mac_address' => 'The :attribute must be a valid MAC address.',
-    'json' => 'The :attribute must be a valid JSON string.',
-    'lt' => [
-        'numeric' => 'The :attribute must be less than :value.',
-        'file' => 'The :attribute must be less than :value kilobytes.',
-        'string' => 'The :attribute must be less than :value characters.',
-        'array' => 'The :attribute must have less than :value items.',
+    'image'                => ':attribute मा फोटो हुनुपर्छ।',
+    'in'                   => 'छानिएको :attribute अमान्य छ।',
+    'in_array'             => ':attribute क्षेत्र मा अवस्थित छैन :other',
+    'integer'              => ':attribute पूर्ण संख्या हुनुपर्छ।',
+    'ip'                   => ':attribute मा दिइएको मान्य IP ठेगाना हुनुपर्छ।',
+    'ipv4'                 => ':attribute एक मान्य IPv4 ठेगाना हुनुपर्दछ.',
+    'ipv6'                 => ':attribute एक मान्य IPv6 ठेगाना हुनुपर्दछ.',
+    'json'                 => ':attribute मा दिइएको मान्य JSON स्ट्रिङ्ग हुनुपर्छ।',
+    'lt'                   => [
+        'array'   => ' :attribute :value आईटमहरू भन्दा बढि हुनुपर्दछ।',
+        'file'    => ' :attribute :value क्यालोबाइट भन्दा बढि हुनुपर्दछ।',
+        'numeric' => ' :attribute :value भन्दा बढि हुनुपर्दछ।',
+        'string'  => ' :attribute :value क्यारेक्टर भन्दा बढि हुनुपर्दछ।',
     ],
-    'lte' => [
-        'numeric' => 'The :attribute must be less than or equal to :value.',
-        'file' => 'The :attribute must be less than or equal to :value kilobytes.',
-        'string' => 'The :attribute must be less than or equal to :value characters.',
-        'array' => 'The :attribute must not have more than :value items.',
+    'lte'                  => [
+        'array'   => ' :attribute :value आईटमहरू भन्दा बढि हुनुपर्दछ।',
+        'file'    => ' :attribute :value क्यालोबाइट भन्दा बढि हुनुपर्दछ।',
+        'numeric' => ' :attribute :value भन्दा बढि हुनुपर्दछ।',
+        'string'  => ' :attribute :value क्यारेक्टर भन्दा बढि हुनुपर्दछ।',
     ],
-    'max' => [
-        'numeric' => 'The :attribute must not be greater than :max.',
-        'file' => 'The :attribute must not be greater than :max kilobytes.',
-        'string' => 'The :attribute must not be greater than :max characters.',
-        'array' => 'The :attribute must not have more than :max items.',
+    'max'                  => [
+        'array'   => ' :attribute मा :max आईटमहरू भन्दा बढि हुनुपर्दछ।',
+        'file'    => ' :attribute :max क्यालोबाइट भन्दा बढि हुनुपर्दछ।',
+        'numeric' => ' :attribute :max भन्दा बढि हुनुपर्दछ।',
+        'string'  => ' :attribute :max क्यारेक्टर भन्दा बढि हुनुपर्दछ।',
     ],
-    'mimes' => 'The :attribute must be a file of type: :values.',
-    'mimetypes' => 'The :attribute must be a file of type: :values.',
-    'min' => [
-        'numeric' => 'The :attribute must be at least :min.',
-        'file' => 'The :attribute must be at least :min kilobytes.',
-        'string' => 'The :attribute must be at least :min characters.',
-        'array' => 'The :attribute must have at least :min items.',
+    'mimes'                => ' :attribute :values प्रकारको फाइल हुनुपर्छ।',
+    'mimetypes'            => ' :attribute :values प्रकारको फाइल हुनुपर्छ।',
+    'min'                  => [
+        'array'   => ':attribute मा कम्तिमा :min आइटम हुनुपर्छ।',
+        'file'    => ':attribute कम्तिमा :min क्यालोबाइटोकाे हुनुपर्छ।',
+        'numeric' => ':attribute कम्तिमा :min हुनुपर्छ।',
+        'string'  => ':attribute कम्तिमा :min वर्णको हुनुपर्छ।',
     ],
-    'multiple_of' => 'The :attribute must be a multiple of :value.',
-    'not_in' => 'The selected :attribute is invalid.',
-    'not_regex' => 'The :attribute format is invalid.',
-    'numeric' => 'The :attribute must be a number.',
-    'password' => 'The password is incorrect.',
-    'present' => 'The :attribute field must be present.',
-    'prohibited' => 'The :attribute field is prohibited.',
-    'prohibited_if' => 'The :attribute field is prohibited when :other is :value.',
-    'prohibited_unless' => 'The :attribute field is prohibited unless :other is in :values.',
-    'prohibits' => 'The :attribute field prohibits :other from being present.',
-    'regex' => 'The :attribute format is invalid.',
-    'required' => 'The :attribute field is required.',
-    'required_if' => 'The :attribute field is required when :other is :value.',
-    'required_unless' => 'The :attribute field is required unless :other is in :values.',
-    'required_with' => 'The :attribute field is required when :values is present.',
-    'required_with_all' => 'The :attribute field is required when :values are present.',
-    'required_without' => 'The :attribute field is required when :values is not present.',
-    'required_without_all' => 'The :attribute field is required when none of :values are present.',
-    'same' => 'The :attribute and :other must match.',
-    'size' => [
-        'numeric' => 'The :attribute must be :size.',
-        'file' => 'The :attribute must be :size kilobytes.',
-        'string' => 'The :attribute must be :size characters.',
-        'array' => 'The :attribute must contain :size items.',
+    'multiple_of'          => 'यो :attribute को एक धेरै हुनुपर्छ :value',
+    'not_in'               => 'छानिएको :attribute अमान्य छ।',
+    'not_regex'            => ':attribute ढाँचा अवैध छ.',
+    'numeric'              => ':attribute संख्या हुनुपर्छ।',
+    'password'             => 'पासवर्ड गलत छ।',
+    'present'              => ':attribute क्षेत्र उपस्थित हुनुपर्दछ.',
+    'prohibited'           => 'यो :attribute क्षेत्र निषेध छ । ',
+    'prohibited_if'        => 'यो :attribute क्षेत्र निषेध छ जब :other छ :value.',
+    'prohibited_unless'    => 'यो :attribute क्षेत्र निषेध छ नभएसम्म :other छ :values.',
+    'regex'                => ':attribute को ढाँचा मिलेन।',
+    'relatable'            => 'यो :attribute हुन सक्छ, यस संग सम्बन्धित संसाधन । ',
+    'required'             => ':attribute दिइएको हुनुपर्छ।',
+    'required_if'          => ':attribute चाहिन्छ जब :other :value हुन्छ।',
+    'required_unless'      => ':other :values मा नभएसम्म :attribute चाहिन्छ।',
+    'required_with'        => ':values भएसम्म :attribute चाहिन्छ।',
+    'required_with_all'    => ':values भएसम्म :attribute चाहिन्छ।',
+    'required_without'     => ':values नभएको बेला :attribute चाहिन्छ।',
+    'required_without_all' => 'कुनैपनि :values नभएको बेला :attribute चाहिन्छ।',
+    'same'                 => ':attribute र :other मिल्नुपर्छ।',
+    'size'                 => [
+        'array'   => ':attribute :sizeमा आइटम हुनुपर्छ।',
+        'file'    => ':attribute :size क्यालोबाइटोकाे हुनुपर्छ।',
+        'numeric' => ':attribute :size हुनुपर्छ।',
+        'string'  => ':attribute :size वर्णको हुनुपर्छ।.',
     ],
-    'starts_with' => 'The :attribute must start with one of the following: :values.',
-    'string' => 'The :attribute must be a string.',
-    'timezone' => 'The :attribute must be a valid timezone.',
-    'unique' => 'The :attribute has already been taken.',
-    'uploaded' => 'The :attribute failed to upload.',
-    'url' => 'The :attribute must be a valid URL.',
-    'uuid' => 'The :attribute must be a valid UUID.',
-
-    /*
-    |--------------------------------------------------------------------------
-    | Custom Validation Language Lines
-    |--------------------------------------------------------------------------
-    |
-    | Here you may specify custom validation messages for attributes using the
-    | convention "attribute.rule" to name the lines. This makes it quick to
-    | specify a specific custom language line for a given attribute rule.
-    |
-    */
-
-    'custom' => [
+    'starts_with'          => ':attribute निम्न मध्ये एकसँग सुरू हुनुपर्दछ :values',
+    'string'               => ':attribute स्ट्रिङ्ग हुनुपर्छ।',
+    'timezone'             => ':attribute मान्य समय क्षेत्र हुनुपर्छ।',
+    'unique'               => 'यो :attribute पहिले नै लिई सकेको छ।',
+    'uploaded'             => ':attribute अपलोड गर्न असफल भयो।',
+    'url'                  => ':attribute को ढांचा मिलेन।',
+    'uuid'                 => ':attribute एक मान्य UUID हुनुपर्दछ।',
+    'custom'               => [
         'attribute-name' => [
             'rule-name' => 'custom-message',
         ],
     ],
-
-    /*
-    |--------------------------------------------------------------------------
-    | Custom Validation Attributes
-    |--------------------------------------------------------------------------
-    |
-    | The following language lines are used to swap our attribute placeholder
-    | with something more reader friendly such as "E-Mail Address" instead
-    | of "email". This simply helps us make our message more expressive.
-    |
-    */
-
-    'attributes' => [],
-
+    'attributes'           => [],
 ];

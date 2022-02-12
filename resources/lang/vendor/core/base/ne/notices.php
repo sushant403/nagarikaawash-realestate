@@ -1,17 +1,17 @@
 <?php
 
 return [
-    'create_success_message' => 'Created successfully',
-    'update_success_message' => 'Updated successfully',
-    'delete_success_message' => 'Deleted successfully',
-    'success_header' => 'Success!',
-    'error_header' => 'Error!',
-    'no_select' => 'Please select at least one record to perform this action!',
-    'processing_request' => 'We are processing your request.',
-    'error' => 'Error!',
-    'success' => 'Success!',
-    'info' => 'Info!',
+    'create_success_message' => 'सफलतापूर्वक सिर्जना गरियो',
+    'update_success_message' => 'सफलतापूर्वक अद्यावधिक गरियो',
+    'delete_success_message' => 'सफलतापूर्वक मेटाइयो',
+    'success_header' => 'सफल!',
+    'error_header' => 'त्रुटि!',
+    'no_select' => 'कृपया यो कार्य गर्नको लागि कम्तिमा एउटा रेकर्ड चयन गर्नुहोस्!',
+    'processing_request' => 'हामी तपाईंको अनुरोधलाई प्रशोधन गर्दैछौं।',
+    'error' => 'त्रुटि!',
+    'success' => 'सफलता!',
+    'info' => 'जानकारी!',
     'enum' => [
-        'validate_message' => 'The :attribute value you have entered is invalid.',
+        'validate_message' => 'तपाईले प्रविष्ट गर्नुभएको :attribute मान अमान्य छ।',
     ],
 ];

@@ -1,9 +1,9 @@
 <?php
 
 return [
-    'password' => 'Passwords must be at least six characters and match the confirmation.',
-    'user' => 'We can\'t find a user with that e-mail address.',
-    'token' => 'This password reset token is invalid.',
-    'sent' => 'Password reminder sent!',
-    'reset' => 'Password has been reset!',
+    'password' => 'पासवर्डहरू कम्तीमा छ वर्णको हुनुपर्छ र पुष्टिकरणसँग मेल खान्छ।',
+    'user' => 'हामीले त्यो इमेल ठेगाना भएको प्रयोगकर्ता फेला पार्न सक्दैनौं।',
+    'token' => 'यो पासवर्ड रिसेट टोकन अमान्य छ।',
+    'sent' => 'पासवर्ड रिमाइन्डर पठाइयो!',
+    'reset' => 'पासवर्ड रिसेट गरिएको छ!',
 ];
